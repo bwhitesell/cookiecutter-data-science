@@ -1,6 +1,6 @@
-# Cookiecutter Data Science
+# Slated's Data Science Cookiecutter
 
-_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
+_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work within the slated organization._
 
 
 #### [Project homepage](https://github.com/bwhitesell/cookiecutter-sds)
@@ -101,9 +101,6 @@ The directory structure of your new project looks like this:
 └── test_environment.py
 ```
 
-## Contributing
-
-We welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
 
 ### Installing development requirements
 ------------
@@ -111,10 +108,10 @@ We welcome contributions! [See the docs for guidelines](https://drivendata.githu
     pip install -r requirements.txt
 
 ### Running the tests
-------------
     Testing Philosophy:
     A lot of code written for the sake of exploration will never see the light of day. Tests are
     only necessary once the code becomes necessary to the functionality of the project.
+------------
 
     py.test tests
 
