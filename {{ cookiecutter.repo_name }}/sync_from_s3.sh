@@ -4,7 +4,7 @@ source config/config.sh
 # aws s3 cp s3://$BUCKET/data/version.sh data/version.sh --profile $PROFILE
 
 source data/version.sh
-if awk 'BEGIN{exit ARGV[2]>ARGV[1]}' "$s3_VERSION" "$VERSION"
+if awk 'BEGIN{exit ARGV[2]>ARGV[1] - .1}' "$s3_VERSION" "$VERSION"
 then
     aws s3 sync s3://$BUCKET/data/ data/ --profile $PROFILE
     echo 's3 sync complete.'
