@@ -6,9 +6,14 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 #### [Project homepage](https://github.com/bwhitesell/cookiecutter-sds)
 
 
-### Requirements to use the cookiecutter template:
+### Slated D.S. Stack:
 -----------
- - Python 2.7 or 3.5
+ Python dist t.b.r. by https://repo.continuum.io/ but for now:
+ - Python 3.6.2
+ - pyenv-virtualenv
+ - django 2.0 + / flask .12 +
+ - postgresql
+
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
 ``` bash
@@ -21,6 +26,9 @@ or
 $ conda config --add channels conda-forge
 $ conda install cookiecutter
 ```
+
+### pyenv-virtualenv
+    to be replaced by conda's virtual env mgt.
 
 
 ### To start a new project, run:
@@ -102,7 +110,7 @@ The directory structure of your new project looks like this:
 ### Installing development requirements
 ------------
 
-    pip install -r requirements.txt
+    source deploy.sh
 
 ### Running the tests
     Testing Philosophy:
@@ -114,12 +122,12 @@ The directory structure of your new project looks like this:
 
 
 ### Objectives and Principles to follow:
-Do what is most likely to provide value and be product-izable FIRST.
+    Do what is most likely to provide value and be product-izable FIRST.
 
-Only establish a well defined-spec or goal if it is known or highly likely to be achievable.
+    Only establish a well defined-spec or goal if it is known or highly likely to be achievable.
 
-Maximize the ratio of points dedicated to shipping products to exploratory-points.
+    Maximize the ratio of points dedicated to shipping products to exploratory-points.
 
-Ensure a flexible feature/goal generation process to always.
+    Ensure a flexible feature/goal generation process to always.
 
-Keep a record of what is known.
+    Keep a record of what is known.
